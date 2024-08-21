@@ -18,17 +18,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Custom value Tailwind -->
     <script>
         tailwind.config = {
             theme: {
+                fontFamily: {
+                    'manrope': ['Manrope', 'sans-serif']
+                },
                 extend: {
                     colors: {
                         clifford: '#da373d',
                         tiya: '#ABEF5F',
 
                     }
-                }
+                },
+
             }
         }
     </script>
@@ -41,45 +50,78 @@
     </style>
 
     <!-- Fav icon -->
-    <link rel="shortcut icon"
-        href="./favicon.png"
-        type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
 </head>
 
-<body>
+<body class="font-manrope">
     <!-- Header Section -->
     <header class="md:container mx-auto">
-        <div class="navbar bg-base-100">
-            <div class="flex-1">
-              <a class="btn btn-ghost text-xl">daisyUI</a>
-            </div>
-            <div class="flex-none gap-2">
-              <div class="form-control">
-                <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
-              </div>
-              <div class="dropdown dropdown-end">
-                <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-                  <div class="w-10 rounded-full">
-                    <img
-                      alt="Tailwind CSS Navbar component"
-                      src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
-                  </div>
+
+        <!-- Header Nav section -->
+        <div class="navbar bg-base-100 lg:mt-5">
+
+            <!-- Navbar Start -->
+            <div class="navbar-start">
+                <!-- Mobible Device Dropdown -->
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost flex lg:hidden md:flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
                 </div>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                  <li>
-                    <a class="justify-between">
-                      Profile
-                      <span class="badge">New</span>
-                    </a>
-                  </li>
-                  <li><a>Settings</a></li>
-                  <li><a>Logout</a></li>
-                </ul>
-              </div>
+                <!-- Title -->
+                <a class="lg:font-extrabold lg:text-3xl flex items-center">
+                    <div class="bg-tiya p-1 rounded-full mr-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
+                    </div>
+                    Rinterio
+                </a>
             </div>
-          </div>
+
+            <!-- Navbar Center -->
+            <div class="navbar-center hidden md:hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Navbar End -->
+            <div class="navbar-end hidden md:flex lg:flex">
+                <div class="lg:flex md:flex items-center bg-tiya px-4 py-2 rounded-full">
+                    <a class="md:mr-1 lg:mr-1 font-extrabold text-lg">Book Consult</a>
+                    <div
+                        class="md:p-1 lg:p-1 md:bg-[#1C1C1C] lg:bg-[#1C1C1C] md:rounded-full lg:rounded-full md:ml-1 lg:ml-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-5 text-white">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     </header>
 
     <!-- Main Section -->
