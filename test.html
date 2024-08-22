@@ -9,25 +9,28 @@
 </head>
 
 <body>
-    <div class="lg:grid lg:grid-cols-4 lg:grid-rows-2">
-        
-        <!-- no 1 -->
-        <div class="lg:col-span-3 lg:flex lg:items-center lg:justify-center">
-            <div class="lg:flex lg:items-center lg:justify-center">
-                <img src="./assets/img1.png" alt="">
+    <div class="lg:grid lg:grid-cols-4 lg:grid-rows-2 gap-6 mb-8 md:mt-5">
+
+        <!-- No.1 -->
+        <div
+            class="lg:col-span-3 lg:flex lg:flex-row lg:items-center mb-4 lg:mb-0 p-5 bg-[#FFF] rounded-lg border">
+            <!-- img -->
+            <div class="mb-5 lg:mb-0 lg:mr-6 lg:flex lg:items-center lg:justify-center lg:w-[50%]">
+                <img class="w-full lg:w-auto" src="./assets/img1.png" alt="">
             </div>
-            <div>
+            <!-- text -->
+            <div class="lg:flex lg:flex-col lg:w-[50%]">
                 <h4 class="font-extrabold text-xl text-[#494949] mb-3">Commercial</h4>
-                <p class="text-[#737373] text-base font-medium mb-5">
+                <p class="text-[#737373] text-base font-medium mb-5 ">
                     The barn house captivates with its blend of rustic charm and modern. The barn house
                     captivates with its blend of rustic charm and modern .
                 </p>
                 <!-- view details button -->
-                <button class="btn flex border w-[50%] lg:w-auto justify-start">
+                <button class="text-xl font-extrabold text-[#212121] flex lg:justify-start">
                     View Details
-                    <div class="p-1 bg-tiya rounded-full">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="size-5">
+                    <div class="p-1 ml-2 bg-tiya rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="size-5">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                         </svg>
@@ -36,32 +39,34 @@
             </div>
         </div>
 
-        <!-- no 2 -->
-        <div class="lg:flex lg:items-center lg:justify-center">
+        <!-- No.2 -->
+        <div class="bg-[#FFF] rounded-lg mb-4 lg:mb-0 p-5 lg:flex lg:justify-center lg:items-center border">
             <img class="w-full" src="./assets/img2.png" alt="">
         </div>
 
-        <!-- no 3 -->
-        <div class="lg:flex lg:items-center lg:justify-center">
+        <!-- No.3 -->
+        <div class="bg-[#FFF] rounded-lg mb-4 lg:mb-0 p-5 lg:flex lg:justify-center lg:items-center border">
             <img class="w-full" src="./assets/img3.png" alt="">
         </div>
 
-        <!-- no 4 -->
-        <div class="lg:col-span-2 lg:flex lg:items-center lg:justify-center">
-            <div class="flex items-center justify-center">
-                <img class="w-full" src="./assets/img4.png" alt="">
+        <!-- No.4 -->
+        <div
+            class="lg:col-span-2 bg-[#FFF] rounded-lg mb-4 lg:mb-0 p-5 lg:p-5 lg:flex lg:flex-row lg:justify-center lg:items-center border">
+            <div class="mb-5 lg:mb-0 lg:mr-6 lg:flex lg:items-center lg:justify-center lg:w-min-[50%]">
+                <img class="w-full mb-5 lg:mb-0" src="./assets/img4.png" alt="">
             </div>
-            <div>
+
+            <div class="lg:flex lg:flex-col lg:w-min-[50%]">
                 <h4 class="font-extrabold text-xl text-[#494949] mb-3">Commercial</h4>
                 <p class="text-[#737373] text-base font-medium mb-5">
                     The barn house captivates with its blend of rustic charm and modern.
                 </p>
                 <!-- view details -->
-                <button class="btn flex border w-[50%] lg:w-auto justify-start">
+                <button class="text-xl font-extrabold text-[#212121] flex justify-start">
                     View Details
-                    <div class="p-1 bg-tiya rounded-full">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="size-5">
+                    <div class="p-1 ml-2 bg-tiya rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="size-5">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                         </svg>
@@ -70,13 +75,15 @@
             </div>
         </div>
 
-        <!-- no 5 -->
-        <div class="lg:flex lg:items-center lg:justify-center">
+        <!-- No.5 -->
+        <div class="bg-[#FFF] rounded-lg mb-4 lg:mb-0 p-5 lg:flex lg:justify-center lg:items-center border">
             <img class="w-full" src="./assets/img5.png" alt="">
         </div>
-        <!-- <div>6</div>
-        <div>7</div>
-        <div>8</div> -->
+
+        <!-- No.6 -->
+        <div class="md:col-span-1 lg:hidden bg-[#FFF] rounded-lg mb-4 p-5 flex justify-center border">
+            <img class="w-full" src="./assets/img3.png" alt="">
+        </div>
     </div>
 </body>
 
