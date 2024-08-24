@@ -573,97 +573,116 @@
                     </p>
                 </div>
 
-                <!-- Grid layout part -->
+                <!-- grid layout -->
                 <div
-                    class="md:grid md:grid-cols-2 md:grid-rows-4 lg:grid lg:grid-cols-12 lg:grid-rows-2 gap-6 mb-8 md:mt-5">
-
-                    <!-- No.1 -->
-                    <div
-                        class="md:col-span-2 lg:col-span-8 lg:flex lg:flex-row lg:items-center mb-4 lg:mb-0 p-5 bg-[#FFF] rounded-lg border md:flex md:flex-row">
-                        <!-- img -->
+                    class="grid grid-cols-1 gap-4 items-center justify-center lg:grid lg:grid-cols-12 lg:grid-rows-2 md:grid md:grid-cols-2 md:auto-rows-auto">
+                    <!-- card 1 -->
+                    <div class="lg:col-span-8 p-5 rounded-2xl bg-[#FFF] md:border md:col-span-2">
                         <div
-                            class="mb-5 lg:m-0 lg:flex lg:items-center lg:justify-center md:flex md:items-center md:justify-center md:w-[40%] md:mr-4 overflow-hidden">
-
-                            <img class="w-full lg:h-full lg:scale-x-125 object-cover rounded-2xl lg:w-auto"
-                                src="./assets/img1.png" alt="">
-                        </div>
-                        <!-- text -->
-                        <div
-                            class="lg:flex lg:flex-col lg:pl-6 lg:w-[60%] md:flex md:flex-col md:justify-center md:w-[60%]">
-                            <h4 class="font-extrabold text-xl md:text-3xl md:mb-10 lg:mb-5 text-[#494949] mb-3">
-                                Commercial</h4>
-                            <p class="text-[#737373] text-base font-medium mb-5 md:mb-10 lg:mb-5 ">
-                                The barn house captivates with its blend of rustic charm and modern. The barn house
-                                captivates with its blend of rustic charm and modern .
-                            </p>
-                            <!-- view details button -->
-                            <button class="text-xl font-extrabold text-[#212121] flex lg:justify-start">
-                                View Details
-                                <div class="p-1 ml-2 bg-tiya rounded-full">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="size-5">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                                    </svg>
+                            class="lg:grid lg:grid-cols-5 items-center justify-center lg:gap-5 md:grid md:grid-cols-5 md:gap-4 md:items-center md:justify-center">
+                            <div
+                                class="lg:col-span-2 card lg:mb-0 mb-5 overflow-hidden md:col-span-2 md:flex md:justify-center md:items-center md:my-auto my-auto">
+                                <img class="w-full h-full object-contain" src="./assets/img1.png" alt="house">
+                            </div>
+                            <div
+                                class="lg:col-span-3 lg:flex lg:flex-col lg:gap-4 md:col-span-3 md:gap-4 md:flex md:flex-col">
+                                <h1 class="text-xl md:text-2xl font-extrabold text-[#494949] md:mb-0 mb-4">Commercial
+                                </h1>
+                                <p class="text-base font-medium text-[#737373] md:mb-0 mb-4">The barn house captivates
+                                    with
+                                    its
+                                    blend of rustic charm and modern. The barn house
+                                    captivates with its blend of rustic charm and modern .
+                                </p>
+                                <div class="flex items-center gap-2">
+                                    <p class="text-base font-extrabold text-[#212121]">View Details</p>
+                                    <div class="p-1 bg-[#ABEF5F] rounded-full">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="size-5">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                        </svg>
+                                    </div>
                                 </div>
-                            </button>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- No.2 -->
-                    <div
-                        class="lg:col-span-4 md:col-span-1 bg-[#FFF] rounded-lg mb-4 lg:mb-0 p-5 lg:flex lg:justify-center lg:items-center border md:flex md:justify-center md:items-center overflow-hidden">
-                        <img class="w-full lg:h-full object-center rounded-2xl" src="./assets/img2.png" alt="">
+                    <!-- card 2 -->
+                    <div class="lg:col-span-4 bg-[#FFF] lg:border rounded-2xl p-5 md:border md:col-span-1">
+                        <div class="card overflow-hidden my-auto md:my-auto">
+                            <img class="w-full h-full bg-cover object-contain md:object-cover md:object-center md:h-64 lg:h-52"
+                                src="./assets/img2.png" alt="house">
+                        </div>
                     </div>
 
-                    <!-- No.3 -->
-                    <div
-                        class="lg:col-span-3 md:col-span-1 bg-[#FFF] rounded-lg mb-4 lg:mb-0 p-5 lg:flex lg:justify-center lg:items-center border md:flex md:justify-center md:items-center overflow-hidden">
-                        <img class="w-full lg:h-full object-cover rounded-2xl" src="./assets/img3.png" alt="">
+                    <!-- card 3 small-(hidden) -->
+                    <div class="hidden lg:block lg:col-span-3 bg-[#FFF] lg:border rounded-2xl p-5 md:col-span-1">
+                        <div class="card overflow-hidden my-auto">
+                            <img class="w-full h-full bg-cover object-contain" src="./assets/img5.png" alt="house">
+                        </div>
                     </div>
 
-                    <!-- No.4 -->
-                    <div
-                        class="md:col-span-2 lg:col-span-6 bg-[#FFF] rounded-lg mb-4 lg:mb-0 p-5 lg:p-5 lg:flex lg:flex-row lg:justify-center lg:items-center border md:flex md:flex-row md:justify-center md:items-center">
-                        <!-- img -->
+                    <!-- Large hidden small show -->
+                    <div class="lg:hidden bg-[#FFF] lg:border rounded-2xl p-5 md:border md:col-span-1">
+                        <div class="card overflow-hidden my-auto">
+                            <img class="w-full h-full bg-cover object-contain" src="./assets/img3.png" alt="house">
+                        </div>
+                    </div>
+
+                    <!-- card 4 -->
+                    <div class="lg:col-span-6 p-5 rounded-2xl bg-[#FFF] lg:border md:col-span-2 md:border">
                         <div
-                            class="mb-5 lg:mb-0 lg:mr-6 lg:flex lg:items-center lg:justify-center lg:w-[50%] md:w-[50%] md:mr-4 overflow-hidden">
-                            <img class="w-full lg:h-full object-cover rounded-2xl mb-5 lg:mb-0" src="./assets/img4.png"
-                                alt="">
-                        </div>
-
-                        <div class="lg:flex lg:flex-col lg:w-[50%] md:w-[50%]">
-                            <h4 class="font-extrabold text-xl text-[#494949] mb-3">Commercial</h4>
-                            <p class="text-[#737373] text-base font-medium mb-5">
-                                The barn house captivates with its blend of rustic charm and modern.
-                            </p>
-                            <!-- view details -->
-                            <button class="text-xl font-extrabold text-[#212121] flex justify-start">
-                                View Details
-                                <div class="p-1 ml-2 bg-tiya rounded-full">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="size-5">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                                    </svg>
+                            class="grid lg:grid-cols-4 items-center justify-center lg:gap-5 md:grid md:grid-cols-4 md:gap-4">
+                            <div class="card lg:col-span-2 overflow-hidden mb-5 lg:mb-0 my-auto md:col-span-2">
+                                <img class="w-full h-full bg-cover object-contain" src="./assets/img4.png" alt="house">
+                            </div>
+                            <div
+                                class="lg:col-span-2 lg:flex lg:flex-col lg:gap-4 md:col-span-2 md:flex md:flex-col md:gap-4">
+                                <h1 class="text-xl md:text-2xl font-extrabold text-[#494949] md:mb-0 mb-4">Commercial
+                                </h1>
+                                <p class="text-base font-medium text-[#737373] md:mb-0 mb-4">The barn house captivates
+                                    with
+                                    its
+                                    blend of rustic charm and modern. The barn house
+                                    captivates with its blend of rustic charm and modern .
+                                </p>
+                                <div class="flex items-center gap-2">
+                                    <p class="text-base font-extrabold text-[#212121]">View Details</p>
+                                    <div class="p-1 bg-[#ABEF5F] rounded-full">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="size-5">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                        </svg>
+                                    </div>
                                 </div>
-                            </button>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- No.5 -->
-                    <div
-                        class="md:col-span-1 lg:col-span-3 bg-[#FFF] rounded-lg mb-4 lg:mb-0 p-5 lg:flex lg:justify-center lg:items-center border md:flex md:justify-center md:items-center overflow-hidden">
-                        <img class="w-full lg:h-full object-cover rounded-2xl" src="./assets/img5.png" alt="">
+                    <!-- card 5 -->
+                    <div class="hidden lg:block lg:col-span-3 p-5 rounded-2xl bg-[#FFF] lg:border">
+                        <div class="card overflow-hidden my-auto">
+                            <img class="w-full h-full bg-cover object-contain" src="./assets/img3.png" alt="house">
+                        </div>
                     </div>
 
-                    <!-- No.6 -->
-                    <!-- <div class="">a</div> -->
-                    <div
-                        class="md:col-span-1 lg:hidden bg-[#FFF] rounded-lg mb-4 p-5 flex justify-center border md:flex md:justify-center md:items-center overflow-hidden">
-                        <img class="w-full lg:h-full object-cover rounded-2xl" src="./assets/img3.png" alt="">
+                    <!-- Large hidden small show -->
+                    <div class="lg:hidden bg-[#FFF] lg:border rounded-2xl p-5 md:border md:col-span-1">
+                        <div class="card overflow-hidden my-auto">
+                            <img class="w-full h-full bg-cover object-contain" src="./assets/img5.png" alt="house">
+                        </div>
+                    </div>
+
+                    <!-- card 6 -->
+                    <div class="lg:hidden p-5 rounded-2xl bg-[#FFF] lg:border md:border md:col-span-1">
+                        <div class="card overflow-hidden my-auto">
+                            <img class="w-full h-full bg-cover object-contain" src="./assets/img3.png" alt="house">
+                        </div>
                     </div>
                 </div>
+
             </div>
         </section>
 
